@@ -190,7 +190,7 @@ export class Function extends PrimitiveElement {
                 this.functionExpression = Expression.create();
                 this.functionExpression.setSyntaxStatus(FunctionConstants.SYNTAX_ERROR_OR_STATUS_UNKNOWN_$LI$(), "[" + functionName + "]Invalid function name, pattern not matches: " + ParserSymbol.nameTokenRegExp_$LI$());
             }
-        } else if (((typeof functionName === 'string') || functionName === null) && ((functionExpressionString != null && functionExpressionString instanceof <any>Array && (functionExpressionString.length == 0 || functionExpressionString[0] == null || (functionExpressionString[0] != null && functionExpressionString[0] instanceof <any>PrimitiveElement))) || functionExpressionString === null) && elements === undefined || elements.length === 0) {
+        } else if (((typeof functionName === 'string') || functionName === null) && ((functionExpressionString != null && functionExpressionString instanceof <any>Array && (functionExpressionString.length == 0 || functionExpressionString[0] == null || (functionExpressionString[0] != null && functionExpressionString[0] instanceof <any>PrimitiveElement))) || functionExpressionString === null) && (elements === undefined || elements.length === 0)) {
             let __args = arguments;
             let functionDefinitionString: any = __args[0];
             let elements: any[] = __args[1];
@@ -242,7 +242,7 @@ export class Function extends PrimitiveElement {
                 errorMessage = errorMessage + "\n [" + functionDefinitionString + "] --> pattern not mathes: f(x1,...,xn) = ... reg exp: " + ParserSymbol.functionDefStrRegExp_$LI$();
                 this.functionExpression.setSyntaxStatus(ExpressionConstants.SYNTAX_ERROR_OR_STATUS_UNKNOWN, errorMessage);
             }
-        } else if (((typeof functionName === 'string') || functionName === null) && ((functionExpressionString != null && (functionExpressionString.constructor != null && functionExpressionString.constructor["__interfaces"] != null && functionExpressionString.constructor["__interfaces"].indexOf("org.mariuszgromada.math.mxparser.FunctionExtension") >= 0)) || functionExpressionString === null) && elements === undefined || elements.length === 0) {
+        } else if (((typeof functionName === 'string') || functionName === null) && ((functionExpressionString != null && (functionExpressionString.constructor != null && functionExpressionString.constructor["__interfaces"] != null && functionExpressionString.constructor["__interfaces"].indexOf("org.mariuszgromada.math.mxparser.FunctionExtension") >= 0)) || functionExpressionString === null) && (elements === undefined || elements.length === 0)) {
             let __args = arguments;
             let functionExtension: any = __args[1];
             super(FunctionConstants.TYPE_ID);
@@ -268,7 +268,7 @@ export class Function extends PrimitiveElement {
                 this.functionExpression = new Expression("");
                 this.functionExpression.setSyntaxStatus(FunctionConstants.SYNTAX_ERROR_OR_STATUS_UNKNOWN_$LI$(), "[" + functionName + "]Invalid function name, pattern not matches: " + ParserSymbol.nameTokenRegExp_$LI$());
             }
-        } else if (((typeof functionName === 'string') || functionName === null) && ((functionExpressionString != null && (functionExpressionString.constructor != null && functionExpressionString.constructor["__interfaces"] != null && functionExpressionString.constructor["__interfaces"].indexOf("org.mariuszgromada.math.mxparser.FunctionExtensionVariadic") >= 0)) || functionExpressionString === null) && elements === undefined || elements.length === 0) {
+        } else if (((typeof functionName === 'string') || functionName === null) && ((functionExpressionString != null && (functionExpressionString.constructor != null && functionExpressionString.constructor["__interfaces"] != null && functionExpressionString.constructor["__interfaces"].indexOf("org.mariuszgromada.math.mxparser.FunctionExtensionVariadic") >= 0)) || functionExpressionString === null) && (elements === undefined || elements.length === 0)) {
             let __args = arguments;
             let functionExtensionVariadic: any = __args[1];
             super(FunctionConstants.TYPE_ID);
